@@ -2,30 +2,29 @@
 ```
 sudo apt update && sudo apt upgrade -y
 ```
-
+# Install XFCE Desktop Environment
 ```
 sudo apt install xfce4 xfce4-goodies -y
 ```
-
+# Install xRDP
 ```
 sudo systemctl enable xrdp
 sudo systemctl start xrdp
 ```
-
+# Add xrdp to ssl-cert group
 ```
 sudo adduser xrdp ssl-cert
 ```
 
-```
-
+#  Add a new user for GUI login
 ```
 sudo adduser yourusername
 ```
-
+# Then add the user to sudo group
 ```
 sudo usermod -aG sudo yourusername
 ```
-STEP 6: Set XFCE as the default desktop for the new user
+# Set XFCE as the default desktop for the new user
 
 ```
 su - yourusername
@@ -37,12 +36,12 @@ su - yourusername
 echo "startxfce4" > ~/.xsession
 chmod +x ~/.xsession
 ````
-Then return to root:
+# Then return to root:
 ```
 exit
 ```
 
-Install a Lightweight Browser
+# Install a Lightweight Browser
 ```sudo apt install snapd -y
 ```
 ```
