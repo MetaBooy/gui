@@ -42,7 +42,8 @@ exit
 ```
 
 # Install a Lightweight Browser
-```sudo apt install snapd -y
+```
+sudo apt install snapd -y
 ```
 ```
 sudo apt install firefox-esr -y
