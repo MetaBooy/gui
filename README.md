@@ -8,9 +8,14 @@ sudo apt install xfce4 xfce4-goodies -y
 ```
 # Install xRDP
 ```
-sudo systemctl enable xrdp
-sudo systemctl start xrdp
+sudo apt update
+sudo apt install xrdp -y
 ```
+# then
+```
+sudo systemctl enable xrdp --now
+```
+
 # Add xrdp to ssl-cert group
 ```
 sudo adduser xrdp ssl-cert
